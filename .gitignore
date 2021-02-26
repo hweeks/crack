@@ -1,0 +1,4 @@
+node_modules
+*.log
+# yeah i own an apple computer, or at least want to make it appear that way
+*.DS_Store
