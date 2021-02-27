@@ -1,18 +1,19 @@
-export const naive = (searchString : string) => {
-  const stringLength = searchString.length;
+export const naive = (searchString: string): boolean => {
+  const stringLength = searchString.length
   for (let i = 0; i < stringLength; i++) {
     for (let j = i + 1; j < stringLength; j++) {
-      if (searchString[i] === searchString[j]) return false;
+      if (searchString[i] === searchString[j]) return false
     }
   }
-  return true;
+  return true
 }
 
-export const efficient = (searchString: string) => {
-  const checkMap = Object.create(null);
-  for (let letter of searchString) {
-    if (checkMap[letter]) return false;
-    else checkMap[letter] = letter;
+export const efficient = (searchString: string): boolean => {
+  // a null object has _no_ properties. this is avoids us running into any conflicts!
+  const checkMap: Record<string, string> = Object.create(null)
+  for (const letter of searchString) {
+    if (checkMap[letter] !== undefined) return false
+    else checkMap[letter] = letter
   }
-  return true;
+  return true
 }
