@@ -27,7 +27,7 @@ this will allow you to attach chrome's node developers tools to this project.
 
 ## how was this made
 
-in an attempt to also teach you about `meaningful` development, aka writing code that is functional _not_ academic, i will try and comment and outline all design choices i've made here. to get started i wantedthis repo to do a few things:
+in an attempt to also teach you about `meaningful` development, aka writing code that is functional _not_ academic, i will try and comment and outline all design choices i've made here. to get started i wanted this repo to do a few things:
 
   * be in typescript
   * use source control
